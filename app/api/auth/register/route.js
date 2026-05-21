@@ -25,9 +25,9 @@ export async function POST(req) {
       );
     }
 
-    if (password.length < 6) {
+    if (password.length < 8) {
       return Response.json(
-        { success: false, error: "Password must be at least 6 characters" },
+        { success: false, error: "Password must be at least 8 characters" },
         { status: 400 }
       );
     }

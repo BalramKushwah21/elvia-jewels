@@ -31,7 +31,7 @@ export default function Navbar() {
     <nav className={styles.headerNavbar}>
       {/* Brand */}
       <div className={styles.navbarBrand}>
-        <img src="/logo.jpeg" className={styles.logo} />
+        <img src="/icons/logo.jpeg" className={styles.logo} />
         Elvia Jewels
       </div>
 

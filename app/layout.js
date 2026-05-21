@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   icons: {
-    icon: "/icon.png",
+    icon: "/icons/icon.png",
   },
   title: "Elvia Jewels",
   description:
