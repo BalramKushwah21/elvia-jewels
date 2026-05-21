@@ -31,13 +31,7 @@ export default function ProfileDropdown() {
   return (
     <div className={styles.wrapper} ref={dropdownRef}>
       {/* Button */}
-      <span
-        className={styles.userButton}
-        
-      >
-        {username}
-      </span>
-
+      <span>{username}</span>
     </div>
   );
 }

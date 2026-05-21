@@ -1,15 +1,5 @@
 
-.userButton {
-  
-  background: black;
-  color: white;
-  padding: 8px 12px;
-  border: none;
-  cursor: pointer;
-  border-radius:30px;
-  right: 20px;
-  
-}  
+ 
 
 .logoutBtn {
   margin-top: 8px;
