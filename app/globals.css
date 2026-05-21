@@ -59,3 +59,17 @@ button:hover {
   transform: scale(1.02);
   transition: transform 0.3s ease-in-out;
 }
+
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.8s infinite;
+}

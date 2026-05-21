@@ -1,0 +1,176 @@
+.container {
+  position: fixed;
+  inset: 0;
+  background: #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.backgroundGlow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(251, 191, 36, 0.18), transparent 35%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08), transparent 30%);
+  animation: glowMove 8s ease-in-out infinite alternate;
+}
+
+.card {
+  position: relative;
+  z-index: 10;
+  padding: 60px;
+  border-radius: 32px;
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 20px 80px rgba(0,0,0,0.7);
+}
+
+.loaderWrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.outerRing {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(251,191,36,0.25);
+  animation: spin 10s linear infinite;
+}
+
+.middleRing {
+  position: absolute;
+  inset: 20px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top: 3px solid #fbbf24;
+  border-right: 3px solid #fde68a;
+  animation: spin 2s linear infinite;
+}
+
+.innerRing {
+  position: absolute;
+  inset: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  animation: pulse 2s ease infinite;
+}
+
+.centerDiamond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 38px;
+  height: 38px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: linear-gradient(135deg, #fff, #fde68a, #fbbf24);
+  box-shadow: 0 0 35px rgba(251,191,36,0.9);
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+.brandName {
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  font-weight: 200;
+  letter-spacing: 0.5em;
+}
+
+.brandSub {
+  text-align: center;
+  color: #fbbf24;
+  letter-spacing: 0.8em;
+  margin-top: 12px;
+}
+
+.progressBar {
+  margin-top: 35px;
+  width: 300px;
+  height: 4px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.shimmer {
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #fbbf24, transparent);
+  animation: shimmer 1.5s linear infinite;
+}
+
+.loadingText {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+  letter-spacing: 0.35em;
+  animation: pulse 2s infinite;
+}
+
+/* floating diamonds */
+.floatingDiamond {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, white, #fde68a, #fbbf24);
+  transform: rotate(45deg);
+  box-shadow: 0 0 20px rgba(251,191,36,0.5);
+}
+
+.d1 { top: 15%; left: 15%; animation: float1 6s infinite ease-in-out; }
+.d2 { top: 25%; right: 20%; animation: float2 5s infinite ease-in-out; }
+.d3 { bottom: 20%; left: 18%; animation: float3 7s infinite ease-in-out; }
+.d4 { bottom: 15%; right: 15%; animation: float1 5s infinite ease-in-out; }
+.d5 { top: 50%; left: 8%; animation: float2 6s infinite ease-in-out; }
+.d6 { top: 45%; right: 8%; animation: float3 5s infinite ease-in-out; }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+  from { transform: translateX(-120px); }
+  to { transform: translateX(320px); }
+}
+
+@keyframes pulse {
+  0%,100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+@keyframes sparkle {
+  0%,100% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.15);
+  }
+}
+
+@keyframes glowMove {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+@keyframes float1 {
+  0%,100% { transform: rotate(45deg) translateY(0); }
+  50% { transform: rotate(45deg) translateY(-25px); }
+}
+
+@keyframes float2 {
+  0%,100% { transform: rotate(45deg) translateY(0); }
+  50% { transform: rotate(45deg) translateY(20px); }
+}
+
+@keyframes float3 {
+  0%,100% { transform: rotate(45deg) translateX(0); }
+  50% { transform: rotate(45deg) translateX(20px); }
+}
