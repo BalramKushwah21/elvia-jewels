@@ -93,7 +93,7 @@ enum OTPPurpose {
 model OTP {
   id         String      @id @default(cuid())
   email      String
-        String
+  otpHash   String
   purpose    OTPPurpose
   expiresAt  DateTime
   attempts   Int         @default(0)
