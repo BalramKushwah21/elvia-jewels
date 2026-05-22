@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "@/components/TopRatedProducts.module.css";
-import AddToCart from "@/components/AddToCart";
+import styles from "./TopRatedProducts.module.css";
+import AddToCart from "@/components/AddToCart/AddToCart";
 import { prisma } from "@/lib/prisma";
-import SendToStore from "@/components/Client";
+import SendToStore from "@/components/Client/Client";
 import Link from "next/link";
 import Image from "next/image";
 

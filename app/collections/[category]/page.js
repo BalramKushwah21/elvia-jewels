@@ -1,7 +1,7 @@
 import { prisma } from "@/lib/prisma";
-import AddToCart from "@/components/AddToCart";
+import AddToCart from "@/components/AddToCart/AddToCart";
 import styles from "./collection.module.css";
-import CollectionHeader from "@/components/CollectionHeader";
+import CollectionHeader from "@/components/CollectionHeader/CollectionHeader";
 import Image from "next/image";
 
 export default async function Category({ params }) {

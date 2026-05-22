@@ -2,8 +2,8 @@
 
 import { usePathname } from "next/navigation";
 import CartSync from "@/components/CartSync";
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
+import Footer from "@/components/footer/footer";
+import Navbar from "@/components/navbar/navbar";
 
 export default function AppShell({ children }) {
   const pathname = usePathname();

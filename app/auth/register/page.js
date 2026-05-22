@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import { useState } from "react";
-import styles from "../login/login.module.css";
+import styles from "./register.module.css";
 
 export default function RegisterPage() {
   const router = useRouter();

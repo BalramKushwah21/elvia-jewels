@@ -2,10 +2,11 @@ export const dynamic = "force-dynamic";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/authOptions";
 import { prisma } from "@/lib/prisma";
-import CartClient from "@/components/CartClient";
+import CartClient from "@/components/CartClient/CartClient";
 
 
 export default async function CartPage() {
+
   let session = null;
   let cartItems = []; // ✅ define here (global to function)
 

@@ -17,11 +17,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
 import { useState } from "react";
-import Profile from "@/components/Profile";
-import ProfileDropdown from "@/components/ProfileDropdown";
+import Profile from "@/components/Profile/Profile";
+import ProfileDropdown from "@/components/ProfileDropdown/ProfileDropdown";
 import useCartCount from "@/hooks/useCartCount";
 import styles from "./navbar.module.css";
-import SearchBar from "./SearchBar";
+import SearchBar from "@/components/SearchBar/SearchBar";
 
 const navigationLinks = [
   { href: "/", label: "Home", icon: Home },

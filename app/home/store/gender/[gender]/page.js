@@ -1,7 +1,7 @@
 import { prisma } from "@/lib/prisma";
-import AddToCart from "@/components/AddToCart";
+import AddToCart from "@/components/AddToCart/AddToCart";
 import styles from "./gender.module.css";
-import CollectionHeader from "@/components/CollectionHeader";
+import CollectionHeader from "@/components/CollectionHeader/CollectionHeader";
 
 export default async function Category({ params }) {
     const { gender } = await params;

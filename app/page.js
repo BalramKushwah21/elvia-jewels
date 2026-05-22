@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./home.module.css";
-import Slider from "@/components/slider";
-import ShowSlider from "@/components/imageSlider";
+import Slider from "@/components/slider/slider";
+import ShowSlider from "@/components/imageSlider/imageSlider";
 import { redirect } from "next/navigation";
 import { getUserFromToken } from "@/lib/auth.server";
-import TopRatedProducts from "@/components/TopRatedProducts";
+import TopRatedProducts from "@/components/TopRatedProducts/TopRatedProducts";
 import Link from "next/link";
 
 export default async function Home() {

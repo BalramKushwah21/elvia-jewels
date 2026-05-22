@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "@/components/AddToCart.module.css";
+import styles from "./AddToCart.module.css";
 import { addToGuestCart } from "@/lib/cart";
 import { useSession } from "next-auth/react";
 

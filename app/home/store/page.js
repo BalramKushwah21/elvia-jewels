@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma";
-import AddToCart from "@/components/AddToCart";
+import AddToCart from "@/components/AddToCart/AddToCart";
 import styles from "./store.module.css";
 import Link from "next/link";
 

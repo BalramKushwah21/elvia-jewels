@@ -131,7 +131,7 @@ export default function LoginPage() {
                   <input type="checkbox" defaultChecked />
                   <span>Remember me</span>
                 </label>
-                <Link href="/auth/register">Forgot password?</Link>
+                <Link href="/auth/forgot-password">Forgot password?</Link>
               </div>
 
               {error && <p className={styles.error}>{error}</p>}
